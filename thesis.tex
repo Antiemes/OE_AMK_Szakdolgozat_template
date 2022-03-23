@@ -41,9 +41,15 @@
 
 \begin{document}
 
-%\pagestyle{fancy}
+\pagestyle{fancy}
+\fancyhead[]{}
+\fancyhead[C]{\thepage}
+\fancyfoot[]{}
+\fancyfoot[]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\titleformat{\chapter}[hang]{\normalsize\bfseries}{\color{Blue}\thechapter .\hspace{10pt}}{0pt}{\normalsize\bfseries\color{Blue}\MakeUppercase}
+\titleformat{\chapter}[hang]{\normalsize\bfseries}{\color{Black}\thechapter .\hspace{10pt}}{0pt}{\normalsize\bfseries\color{Blue}\MakeUppercase}
 
 \titleformat{\section}[hang]{\normalsize\bfseries}{\hspace{0pt} \thesection .\hspace{10pt}}{0pt}{\normalsize\bfseries\MakeUppercase}
 
