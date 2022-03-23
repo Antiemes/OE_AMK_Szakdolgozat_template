@@ -1,6 +1,6 @@
 TEX = pdflatex -interaction nonstopmode
 BIB = bibtex
-DOCKERIMAGE = latex
+DOCKERIMAGE = antiemes/latex
 
 
 MAINDOCUMENT = thesis
