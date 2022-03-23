@@ -3,7 +3,9 @@ on: [push]
 
 jobs:
   build:
-    container: antiemes/latex:latest
+    runs-on: ubuntu-latest
+    container:
+      image: antiemes/latex:latest
     steps:
       - uses: actions/checkout@v2
       - run: echo 'Compiling LaTeX document...'
