@@ -1,8 +1,8 @@
 \documentclass[a4paper,12pt,oneside]{report}
+\usepackage[magyar]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage{t1enc}
 \def\magyarOptions{defaults=hu-min}
-\usepackage[magyar]{babel}
 \usepackage{cite}
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{algorithmic}
@@ -41,9 +41,15 @@
 
 \begin{document}
 
-%\pagestyle{fancy}
+\pagestyle{fancy}
+\fancyhead[]{}
+\fancyhead[C]{\thepage}
+\fancyfoot[]{}
+\fancyfoot[]{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-\titleformat{\chapter}[hang]{\normalsize\bfseries}{\color{Blue}\thechapter .\hspace{10pt}}{0pt}{\normalsize\bfseries\color{Blue}\MakeUppercase}
+\titleformat{\chapter}[hang]{\normalsize\bfseries}{\color{Black}\thechapter .\hspace{10pt}}{0pt}{\normalsize\bfseries\color{Black}\MakeUppercase}
 
 \titleformat{\section}[hang]{\normalsize\bfseries}{\hspace{0pt} \thesection .\hspace{10pt}}{0pt}{\normalsize\bfseries\MakeUppercase}
 
@@ -162,10 +168,18 @@ a massa aliquam, at ultrices lorem elementum.
 
 \chapter{Rendszerterv}
 
+\section{Azon belül egy alfejezet}
+
 Nam volutpat odio et tortor mattis pharetra. Aliquam id bibendum nibh, in
+
+\subsection{Még egy szinttel beljebb}
+
+quam ut malesuada. Praesent elementum, ante ut accumsan mollis, nisi urna
+
+\section{Újabb alfejezet}
+
 dictum ligula. Cras condimentum enim nec porta molestie. Sed vel luctus elit.
 Fusce malesuada risus ex, eu molestie lorem fermentum in. Nullam malesuada ac
-quam ut malesuada. Praesent elementum, ante ut accumsan mollis, nisi urna
 accumsan mi, nec iaculis metus dui congue metus. Nullam id justo metus.
 Suspendisse a porttitor nunc. Proin risus tortor, gravida nec dui in, tristique
 mattis urna. Pellentesque rhoncus auctor leo, vel dapibus leo dictum quis.
