@@ -11,6 +11,8 @@ FIGURES = $(shell find *.eps *.png *.jpg)
 all: $(MAINDOCUMENT).tex $(FIGURES)
 	$(TEX) $(MAINDOCUMENT)
 	$(TEX) $(MAINDOCUMENT)
+	pdftk $(MAINDOCUMENT).pdf cat 2-end output $(MAINDOCUMENT)-2-.pdf
+	pdftk cover.pdf $(MAINDOCUMENT)-2-.pdf cat output $(MAINDOCUMENT)-with-cover.pdf
 
 spell::
 	ispell *.tex
