@@ -9,4 +9,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
   texlive-lang-european \
   texlive-latex-recommended \
   texlive-latex-extra \
-&& apt-get clean && rm -rf /var/lib/apt/lists/*
+  imagemagick \
+  pdftk \
+&& apt-get clean && rm -rf /var/lib/apt/lists/* \
+&& sed -i '/^<\/policymap>/i   <policy domain="coder" rights="read | write" pattern="PDF" \/>' /etc/ImageMagick-6/policy.xml
